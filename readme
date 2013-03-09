@@ -1,0 +1,9 @@
+#Usage: ./dailycheck_tianjin.sh
+#it will generate daily check report in /tmp/Dailycheck_{date}.txt
+#Below are the files list. Please make sure they are all in a same folder.
+###############
+check_ntp.sh
+dailycheck_tianjin.exp
+dailycheck_tianjin.sh
+readme
+server_ct_china.txt

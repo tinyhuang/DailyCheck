@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+set timeout -1
+set password_v0cn344 "filenet26m"
+set SERVER_HOST [ lindex $argv 1 ]
+set USER_LOGIN [ lindex $argv 0 ]
+set CHECK_TYPE [ lindex $argv 2 ]
+
+
+spawn ./check_ntp.sh $USER_LOGIN $SERVER_HOST $CHECK_TYPE
+
+expect {
+    "yes/no" { send "yes\r"; exp_continue }
+    "ssword:" { send "$password_v0cn344\r" }
+
+}
+
+interact
+
