@@ -1,6 +1,6 @@
 #!/usr/bin/expect -f
 set timeout -1
-set password_v0cn344 "filenet26m"
+set password_v0cn344 "filenet27m"
 set SERVER_HOST [ lindex $argv 1 ]
 set USER_LOGIN [ lindex $argv 0 ]
 set CHECK_TYPE [ lindex $argv 2 ]
